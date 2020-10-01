@@ -10,7 +10,7 @@ public class EmpSearch {
 		
 		Session session=Utility.getSF().openSession();
 		
-		Emp emp=session.get(Emp.class, 113);
+		Emp emp=session.get(Emp.class, 111);		//SELECT=>JDBC=>ResultSet=>EntityObj(Emp)=>return
 		System.out.println(emp);
 		//System.out.println(emp.getEno());
 		//System.out.println(emp.getEname());

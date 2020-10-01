@@ -27,6 +27,8 @@ public class EmpEntry {
 		session.save(new Emp(111,"AAA",50000));
 		session.save(new Emp(112,"BBB",60000));
 		session.save(new Emp(113,"CCC",70000));
+		session.save(new Emp(114,"DDD",80000));
+		session.save(new Emp(115,"EEE",90000));
 		tr.commit();
 		session.close();
 		System.out.println("Record Stored Successfully..................");
