@@ -24,11 +24,12 @@ public class EmpEntry {
 		
 		Session session=Utility.getSF().openSession();
 		Transaction tr=session.beginTransaction();
-		session.save(new Emp(1001,"Manish",57000));
-		session.save(new Emp(1150,"Priya", 55000));
-		session.save(new Emp(2001,"Smith",40000));
-		session.save(new Emp(1002,"John",60000));
-		session.save(new Emp(1003,"Richa",58000));
+		session.save(new Emp(1001,"Manish",57000,"TL"));
+		session.save(new Emp(1150,"Priya", 55000,"SE"));
+		session.save(new Emp(2001,"Smith",40000,"SE"));
+		session.save(new Emp(1002,"John",60000,"PM"));
+		session.save(new Emp(1003,"Richa",58000,"TL"));
+		session.save(new Emp(1004,"Sam",65000,"PM"));
 		tr.commit();
 		session.close();
 		System.out.println("Record Stored Successfully..................");

@@ -9,7 +9,22 @@ public class Emp {
 	private int eno;
 	private String ename;
 	private int sal;
+	private String desg;
 	
+	
+	public Emp(int eno, String ename, int sal, String desg) {
+		super();
+		this.eno = eno;
+		this.ename = ename;
+		this.sal = sal;
+		this.desg = desg;
+	}
+	public String getDesg() {
+		return desg;
+	}
+	public void setDesg(String desg) {
+		this.desg = desg;
+	}
 	public int getEno() {
 		return eno;
 	}
@@ -37,7 +52,7 @@ public class Emp {
 	
 	@Override
 	public String toString() {
-		return "Emp [eno=" + eno + ", ename=" + ename + ", sal=" + sal + "]";
+		return "Emp [eno=" + eno + ", ename=" + ename + ", sal=" + sal + ", desg=" + desg + "]";
 	}
 	
 	public Emp(int eno) {
